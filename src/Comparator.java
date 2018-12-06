@@ -19,6 +19,12 @@ public class Comparator {
             return o2.id - o1.id;
         }
     }
+    public static class IdAscendingComparator2 implements java.util.Comparator<Student> {
+        @Override
+        public int compare(Student o1, Student o2) {
+            return o1.id - o2.id;
+        }
+    }
 
     public static void printStudents(Student[] students) {
         for (Student student : students) {
@@ -36,6 +42,8 @@ public class Comparator {
         printStudents(students);
 
         Arrays.sort(students, new IdAscendingComparator());
+        printStudents(students);
+        Arrays.sort(students, new IdAscendingComparator2());
         printStudents(students);
     }
 }
