@@ -45,6 +45,8 @@ public class Comparator {
         printStudents(students);
         Arrays.sort(students, new IdAscendingComparator2());
         printStudents(students);
+        printStudents(students);
+        printStudents(students);
     }
 }
 //开大幅度发
