@@ -43,9 +43,8 @@ public class Comparator {
 
         Arrays.sort(students, new IdAscendingComparator());
         printStudents(students);
-        Arrays.sort(students, new IdAscendingComparator2());
-        printStudents(students);
-        printStudents(students);
+
+
 
     }
 }
